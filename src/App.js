@@ -16,7 +16,7 @@ function App() {
     return moment(date).format('D MMMM YYYY, HH:mm');
   };
 
-  return <>{date && <div>created_at: {formatDate(date)}</div>}</>;
+  return <>{date && <div>created_at: {date.toLocaleString()}</div>}</>;
 }
 
 export default App;
